@@ -402,9 +402,6 @@ div hr:nth-child(2) {
   .nav-mobilie ul a {
     font-size: 16px;
   }
-  .nav-mobilie div a {
-    display: flex;
-  }
   .container-Hbutton {
     margin: 0 auto;
   }
