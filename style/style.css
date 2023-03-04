@@ -391,17 +391,19 @@ div hr:nth-child(2) {
     align-items: flex-start;
     gap: 2em;
     padding-top: 1.5em;
-    padding-left: 2em;
-    padding-right: 2em;
   }
   .nav-mobilie ul {
     flex-direction: column;
     width: 100%;
     font-size: 1.2em;
     align-items: flex-start;
+    padding-left: 30px;
   }
   .nav-mobilie ul a {
     font-size: 16px;
+  }
+  .nav-mobilie div a {
+    display: flex;
   }
   .container-Hbutton {
     margin: 0 auto;
@@ -522,11 +524,11 @@ div hr:nth-child(2) {
   }
   .img-container-2 {
     padding: 0;
-    width: 330px;
+    width: 360px;
     height: 225px;
   }
   .img-container-2 img {
-    width: 330px;
+    width: 360px;
   }
   .button-metho {
     width: 325px;
@@ -535,19 +537,23 @@ div hr:nth-child(2) {
     margin-top: 40px;
   }
 }
-@media (max-width: 428px) {
-  header {
-    padding: 0 1em;
+@media (max-width: 440px) {
+  .header-content,
+.title-container,
+.subtitle-container,
+.container-cards,
+.title-container-2 {
+    max-width: calc(100% - 10px);
+  }
+  main {
+    justify-content: center;
   }
   .nav-mobilie {
     padding-left: 1em;
     padding-right: 1em;
   }
-  .nav-mobilie ul {
-    padding-left: 2em;
-  }
   .nav-mobilie .header-button {
-    width: 100%;
+    width: 400px;
   }
 }
 
