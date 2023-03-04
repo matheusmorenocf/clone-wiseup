@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -151,11 +152,11 @@ main section:nth-child(1) {
 main section:nth-child(2) {
   background: #E5E5E5;
 }
+main section:nth-child(3) {
+  background: #2A004F;
+}
 
-.title-container,
-.subtitle-container,
-.container-cards,
-.title-container-2 {
+.width-content {
   max-width: 1140px;
 }
 
@@ -318,7 +319,8 @@ div hr:nth-child(2) {
 .text-content-2 {
   grid-area: title-2;
 }
-.text-content-2 h2, .text-content-2 p {
+.text-content-2 h2,
+.text-content-2 p {
   color: #2A004F;
   padding: 0 60px;
 }
@@ -342,13 +344,52 @@ div hr:nth-child(2) {
   border-radius: 30px;
 }
 
+.title-container-3 {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  margin-bottom: 200px;
+}
+.title-container-3 div {
+  max-width: 390px;
+  padding: 0 15px;
+}
+.title-container-3 div h2 {
+  margin-top: 140px;
+  font-size: 42px;
+  text-align: right;
+  padding-left: 70px;
+}
+.title-container-3 div p {
+  margin: 14px 0;
+  line-height: 1.5em;
+}
+.title-container-3 div p span {
+  font-size: 20px;
+}
+.title-container-3 div:nth-child(3) {
+  margin-top: 120px;
+}
+.title-container-3 div:nth-child(3) a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 288px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.img-container-3 img {
+  margin-top: -80px;
+  width: 360px;
+}
+
 @media (max-width: 1200px) {
   .header-content {
     max-width: 970px;
   }
-  .title-container,
-.subtitle-container,
-.title-container-2 {
+  .width-content {
     max-width: 940px;
   }
   .img-container img {
@@ -367,6 +408,15 @@ div hr:nth-child(2) {
   }
   .img-container-2 img {
     width: 100%;
+  }
+  .title-container-3 div h2 {
+    padding-left: 10px;
+  }
+  .title-container-3 div:nth-child(3) {
+    margin-top: 30px;
+  }
+  .img-container-3 img {
+    width: 290px;
   }
 }
 @media (max-width: 990px) {
@@ -412,10 +462,7 @@ div hr:nth-child(2) {
     text-align: center;
     font-size: 1.1em;
   }
-  .title-container,
-.subtitle-container,
-.container-cards,
-.title-container-2 {
+  .width-content {
     width: 730px;
   }
   .title-container {
@@ -460,13 +507,19 @@ div hr:nth-child(2) {
   .img-container-2 img {
     width: 100%;
   }
+  .title-container-3 div h2 {
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+  .title-container-3 div:nth-child(3) {
+    margin-top: 30px;
+  }
+  .img-container-3 img {
+    width: 220px;
+  }
 }
 @media (max-width: 768px) {
-  .header-content,
-.title-container,
-.subtitle-container,
-.container-cards,
-.title-container-2 {
+  .width-content {
     max-width: 420px;
   }
   .text-content {
@@ -512,11 +565,13 @@ div hr:nth-child(2) {
     grid-template-columns: 1fr;
     grid-template-areas: "title-2" " methodology" "button";
   }
-  .text-content-2 h2, .text-content-2 p {
+  .text-content-2 h2,
+.text-content-2 p {
     padding: 0 30px;
     text-align: center;
   }
-  .img-container-2, .button-metho {
+  .img-container-2,
+.button-metho {
     margin: 0 auto;
   }
   .img-container-2 {
@@ -531,13 +586,37 @@ div hr:nth-child(2) {
     border-radius: 10px;
     margin-top: 100px;
   }
+  .title-container-3 {
+    flex-wrap: wrap;
+  }
+  .title-container-3 div {
+    max-width: 420px;
+  }
+  .title-container-3 div h2 {
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 0px;
+  }
+  .title-container-3 div h2 span {
+    padding: 0;
+  }
+  .title-container-3 div:nth-child(3) {
+    margin-top: 30px;
+  }
+  .title-container-3 div:nth-child(3) a {
+    margin: 30px 0;
+    max-width: 390px;
+    height: 75px;
+  }
+  .img-container-3 img {
+    margin-top: 0;
+    width: 390px;
+  }
 }
-@media (max-width: 440px) {
-  .header-content,
-.title-container,
-.subtitle-container,
-.container-cards,
-.title-container-2 {
+@media (max-width: 425px) {
+  .width-content {
     max-width: calc(100% - 10px);
   }
   .nav-mobilie {
@@ -546,6 +625,19 @@ div hr:nth-child(2) {
   }
   .nav-mobilie .header-button {
     width: 400px;
+  }
+  .title-container-3 {
+    flex-wrap: wrap;
+  }
+  .title-container-3 div {
+    max-width: 420px;
+  }
+  .title-container-3 div h2 {
+    text-align: center;
+  }
+  .img-container-3 img {
+    margin-top: 0;
+    width: calc(100% - 10px);
   }
 }
 
