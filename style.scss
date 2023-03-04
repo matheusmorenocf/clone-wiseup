@@ -428,9 +428,6 @@ div {
   }
 }
 
-
-
-
 @media (max-width: 990px) {
   .container-menu-mobilie {
     display: flex;
@@ -634,18 +631,17 @@ div {
     margin: 0 auto;
   }
   .img-container-2{
-    padding: 0;
-    width: 360px;
-    height: 225px;
+    width: calc(100% - 10px);
     img{
-      width: 360px;
+      width: 100%;
     }
+
   }
   .button-metho{
-    width: 325px;
+    width: calc(100% - 10px);
     height: 75px;
-    border-radius: 15px;
-    margin-top: 40px;
+    border-radius: 10px;
+    margin-top: 100px;
   }
 }
 
@@ -657,10 +653,8 @@ div {
   .title-container-2 {
     max-width: calc(100% - 10px);
   }
-  main{
-    justify-content: center;
-  }
 
+  
   .nav-mobilie {
     padding-left: 1em;
     padding-right: 1em;
@@ -668,5 +662,4 @@ div {
       width: 400px;
     }
   }
-
 }
