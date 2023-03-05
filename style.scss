@@ -473,11 +473,12 @@ div {
 .container-card-2{
   display: flex;
   gap: 15px;
-  justify-content: center;
 }
 
 .card-1{
   background: $secondary-color;
+  min-width: 210px;
+  height: 385px;
   padding: 25px;
   border-radius: 10px;
   h3{
@@ -491,25 +492,21 @@ div {
     
   }
 }
-.card-size{
-  max-width: 210px;
-  height: 385px;
-}
+
 
 
 .card-2{
-  
+  width: calc(95% / 4);
+  height: 385px;
   background: $secondary-color;
   border-radius: 10px;
-  h3{
-    font-size: 24px;
-    margin: 10px 0;
-  }
+
   p{
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0 10px;
     font-size: 14px;
     color: $white;
+    line-height: 1.5em;
 
     
   }
@@ -527,7 +524,6 @@ div {
   h4{
     color: $white;
     font-weight: bold;
-    margin-bottom: 15px;
   }
   p{
     padding: 0;
@@ -537,18 +533,19 @@ div {
 
 
 
-.container-carousel{
+.carousel{
   position: relative;
   overflow: hidden;
 }
 
-.carousel{
+.container-card-2{
   transition: transform 0.3s ease-in-out;
 
 }
 
 .icons-carousel{
-  right: 0;
+  top: 0;
+  right: 20px;
   margin-top: 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -580,9 +577,6 @@ div {
   }
 }
 
-.carousel .card-2:first-child{
-  
-}
 
 .background-1{
   background: url("../assets/img-new-york.webp") center no-repeat;
@@ -658,8 +652,12 @@ div {
     padding: 17px;
   }
 
+  .card-2:first-child{
+    margin-left: 0;
+  }
+
   .card-size{
-    max-width: 182px;
+    width: 182px;
     height: 410px;
   }
 
@@ -814,6 +812,23 @@ div {
       margin-bottom: 0px;
     }
   }
+  .card-container-2{
+    flex-wrap: wrap;
+  }
+  .card-1{
+    width: 100%;
+    height: 220px;
+
+  }
+  .card-img-container-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .card-2{
+    min-width: calc(95% / 3);
+  }
 
 }
 
@@ -952,6 +967,9 @@ div {
       width: 390px;
     }
   }
+  .card-2{
+    min-width: calc(95% / 2);
+  }
 }
 
 @media (max-width: 425px) {
@@ -986,5 +1004,17 @@ div {
       margin-top: 0;
       width: calc(100% - 10px);
     }
+  }
+  .card-1{
+    height: 250px;
+  }
+  .card-2{
+    min-width: 80%;
+    p{
+      line-height: 2em;
+    }
+  }
+  .background-card{
+    height: 40%;
   }
 }
