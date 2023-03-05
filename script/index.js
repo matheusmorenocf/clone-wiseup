@@ -42,15 +42,15 @@ leftButton.addEventListener('click', () => {
   console.log("Previous")
   if (currentIndex > 0) {
     currentIndex--;
-    cardsContainer.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth)}px)`;
+    carousel.querySelector('.container-card-2').style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth)}px)`;
   }
 });
 
 rightButton.addEventListener('click', () => {
   console.log("Next")
   if (currentIndex < cards.length - numVisibleCards()) {
-    currentIndex++;
-    cardsContainer.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth + 25)}px)`;
+    currentIndex ++ ;
+    cardsContainer.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth)}px)`;
   }
 });
 
